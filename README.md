@@ -102,6 +102,7 @@ shoose tab of web scaraper
 
 import the following settings json:
 
+```json
 
 {"_id":"kneset2","startUrl":[
  "https://www.knesset.gov.il/vote/heb/vote_res_list.asp?mk_individul_id_t=&ckMkIndiv=&RStart=1620"
@@ -192,7 +193,7 @@ import the following settings json:
 
 
 
-
+```
 
 click scrape
 
@@ -217,7 +218,7 @@ run the following code:
 
 $0 means the element selected
 
-```
+```javascript
 
 data=[].slice.call($0.rows,0).map(r=>[].slice.call(r.cells,0).map(x=>x.innerText) )
 
